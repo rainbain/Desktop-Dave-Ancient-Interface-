@@ -1,5 +1,6 @@
 // Click sound setup
 const clickSound = new Audio("click.mp3");
+const introSound = new Audio("intro.mp3");
 
 // Helper to play click sound
 function playClick() {
@@ -121,6 +122,8 @@ function openVideoWindow() {
 
     videoEl.muted = false;
     videoEl.play();
+
+    introSound.play();
 }
 
 /* Shapes Window */
